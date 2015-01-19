@@ -14,6 +14,7 @@
 		B32482021A6B546200CD9244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32482011A6B546200CD9244 /* Images.xcassets */; };
 		B32482051A6B546200CD9244 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32482031A6B546200CD9244 /* LaunchScreen.xib */; };
 		B32482111A6B546200CD9244 /* swarmatronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32482101A6B546200CD9244 /* swarmatronTests.m */; };
+		B341A8481A6C0AF2004CFE0D /* FMOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = B341A8471A6C0AF2004CFE0D /* FMOscillator.m */; };
 		B3B061DF1A6B664F008F3412 /* AKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0607E1A6B664E008F3412 /* AKEvent.m */; };
 		B3B061E01A6B664F008F3412 /* AKInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060811A6B664E008F3412 /* AKInstrument.m */; };
 		B3B061E11A6B664F008F3412 /* AKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060831A6B664E008F3412 /* AKManager.m */; };
@@ -157,6 +158,9 @@
 		B3B0626E1A6B664F008F3412 /* AKNoteProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061D91A6B664F008F3412 /* AKNoteProperty.m */; };
 		B3B0626F1A6B664F008F3412 /* AKAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061DC1A6B664F008F3412 /* AKAudioAnalyzer.m */; };
 		B3B062701A6B664F008F3412 /* LevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061DE1A6B664F008F3412 /* LevelMeter.m */; };
+		B3F758F11A6D9F2D008915EE /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */; };
+		B3F758F21A6D9F2D008915EE /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */; };
+		B3F758F31A6D9F2D008915EE /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +187,8 @@
 		B324820A1A6B546200CD9244 /* swarmatronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swarmatronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B324820F1A6B546200CD9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32482101A6B546200CD9244 /* swarmatronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swarmatronTests.m; sourceTree = "<group>"; };
+		B341A8461A6C0AF2004CFE0D /* FMOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOscillator.h; sourceTree = "<group>"; };
+		B341A8471A6C0AF2004CFE0D /* FMOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOscillator.m; sourceTree = "<group>"; };
 		B3B0607D1A6B664E008F3412 /* AKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKEvent.h; sourceTree = "<group>"; };
 		B3B0607E1A6B664E008F3412 /* AKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKEvent.m; sourceTree = "<group>"; };
 		B3B0607F1A6B664E008F3412 /* AKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFoundation.h; sourceTree = "<group>"; };
@@ -489,6 +495,12 @@
 		B3B061DC1A6B664F008F3412 /* AKAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAudioAnalyzer.m; sourceTree = "<group>"; };
 		B3B061DD1A6B664F008F3412 /* LevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelMeter.h; sourceTree = "<group>"; };
 		B3B061DE1A6B664F008F3412 /* LevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelMeter.m; sourceTree = "<group>"; };
+		B3F758EB1A6D9F2D008915EE /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
+		B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobControl.m; sourceTree = "<group>"; };
+		B3F758ED1A6D9F2D008915EE /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		B3F758EF1A6D9F2D008915EE /* RWKnobRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobRenderer.h; sourceTree = "<group>"; };
+		B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -533,6 +545,14 @@
 		B32481F31A6B546200CD9244 /* swarmatron */ = {
 			isa = PBXGroup;
 			children = (
+				B3F758EB1A6D9F2D008915EE /* RWKnobControl.h */,
+				B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */,
+				B3F758ED1A6D9F2D008915EE /* RWRotationGestureRecognizer.h */,
+				B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */,
+				B3F758EF1A6D9F2D008915EE /* RWKnobRenderer.h */,
+				B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */,
+				B341A8461A6C0AF2004CFE0D /* FMOscillator.h */,
+				B341A8471A6C0AF2004CFE0D /* FMOscillator.m */,
 				B32481F81A6B546200CD9244 /* AppDelegate.h */,
 				B32481F91A6B546200CD9244 /* AppDelegate.m */,
 				B32481FB1A6B546200CD9244 /* ViewController.h */,
@@ -1360,11 +1380,14 @@
 				B3B061E71A6B664F008F3412 /* AKSequence.m in Sources */,
 				B3B061FF1A6B664F008F3412 /* AKExponentialCurves.m in Sources */,
 				B3B062241A6B664F008F3412 /* AKFMOscillator.m in Sources */,
+				B3F758F11A6D9F2D008915EE /* RWKnobControl.m in Sources */,
 				B3B061E41A6B664F008F3412 /* AKOrchestra.m in Sources */,
 				B3B0624E1A6B664F008F3412 /* AKFlanger.m in Sources */,
+				B341A8481A6C0AF2004CFE0D /* FMOscillator.m in Sources */,
 				B3B062361A6B664F008F3412 /* AKStick.m in Sources */,
 				B32481FD1A6B546200CD9244 /* ViewController.m in Sources */,
 				B3B061F51A6B664F008F3412 /* AKParameter+Operation.m in Sources */,
+				B3F758F31A6D9F2D008915EE /* RWKnobRenderer.m in Sources */,
 				B3B061E11A6B664F008F3412 /* AKManager.m in Sources */,
 				B3B062441A6B664F008F3412 /* AKFileInput.m in Sources */,
 				B3B062461A6B664F008F3412 /* AKMP3FileInput.m in Sources */,
@@ -1406,6 +1429,7 @@
 				B3B062661A6B664F008F3412 /* AKArray.m in Sources */,
 				B3B0626D1A6B664F008F3412 /* AKInstrumentProperty.m in Sources */,
 				B3B062091A6B664F008F3412 /* AKAssignment.m in Sources */,
+				B3F758F21A6D9F2D008915EE /* RWRotationGestureRecognizer.m in Sources */,
 				B3B0625B1A6B664F008F3412 /* AKBandRejectButterworthFilter.m in Sources */,
 				B3B062391A6B664F008F3412 /* AKBowedString.m in Sources */,
 				B3B062181A6B664F008F3412 /* AKPhaseLockedVocoder.m in Sources */,

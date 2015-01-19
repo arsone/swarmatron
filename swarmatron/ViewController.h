@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *knobPlaceHolder;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+
+- (IBAction)handleValueChanged:(id)sender;
 
 @end
 
