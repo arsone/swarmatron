@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "AKFoundation.h"
-#import "FMOscillator.h"
 #import "RWKnobControl.h"
 
+
 @interface ViewController () {
-    FMOscillator *fm;
+//    AKFMOscillator *fm;
     RWKnobControl *_knobControl;
 }
 
@@ -24,18 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    fm = [[FMOscillator alloc] init];
-    [AKOrchestra addInstrument:fm];
-    [AKOrchestra start];
-    fm.amplitude.value = fm.amplitude.minimum;
-    [fm play];
+//    fm = [[AKFMOscillator alloc] init];
+//    [AKOrchestra addInstrument:fm];
+//    [AKOrchestra start];
+//    fm.amplitude.value = fm.amplitude.minimum;
+//    [fm play];
     
     _knobControl = [[RWKnobControl alloc] initWithFrame:self.knobPlaceHolder.bounds];
     [self.knobPlaceHolder addSubview:_knobControl];
     
     _knobControl.lineWidth = 4.0;
     _knobControl.pointerLength = 8.0;
-    self.view.tintColor = [UIColor redColor];
+    self.view.tintColor = [UIColor colorWithRed:146.0/255.0f green:205.0/255.0f blue:207.0/255.0f alpha:1.0];
     
     [_knobControl addObserver:self forKeyPath:@"value" options:0 context:NULL];
     

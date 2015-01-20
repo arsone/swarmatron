@@ -14,7 +14,6 @@
 		B32482021A6B546200CD9244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32482011A6B546200CD9244 /* Images.xcassets */; };
 		B32482051A6B546200CD9244 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32482031A6B546200CD9244 /* LaunchScreen.xib */; };
 		B32482111A6B546200CD9244 /* swarmatronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32482101A6B546200CD9244 /* swarmatronTests.m */; };
-		B341A8481A6C0AF2004CFE0D /* FMOscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = B341A8471A6C0AF2004CFE0D /* FMOscillator.m */; };
 		B3B061DF1A6B664F008F3412 /* AKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0607E1A6B664E008F3412 /* AKEvent.m */; };
 		B3B061E01A6B664F008F3412 /* AKInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060811A6B664E008F3412 /* AKInstrument.m */; };
 		B3B061E11A6B664F008F3412 /* AKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060831A6B664E008F3412 /* AKManager.m */; };
@@ -33,7 +32,6 @@
 		B3B061F11A6B664F008F3412 /* mandpluk.aif in Resources */ = {isa = PBXBuildFile; fileRef = B3B060C21A6B664E008F3412 /* mandpluk.aif */; };
 		B3B061F21A6B664F008F3412 /* marmstk1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3B060C31A6B664E008F3412 /* marmstk1.wav */; };
 		B3B061F31A6B664F008F3412 /* PianoBassDrumLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3B060C41A6B664E008F3412 /* PianoBassDrumLoop.wav */; };
-		B3B061F41A6B664F008F3412 /* AudioKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B060C61A6B664E008F3412 /* AudioKit.swift */; };
 		B3B061F51A6B664F008F3412 /* AKParameter+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060C91A6B664E008F3412 /* AKParameter+Operation.m */; };
 		B3B061F61A6B664F008F3412 /* AKTrackedAmplitude.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060CC1A6B664E008F3412 /* AKTrackedAmplitude.m */; };
 		B3B061F71A6B664F008F3412 /* AKTrackedAmplitudeFromFSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060CE1A6B664E008F3412 /* AKTrackedAmplitudeFromFSignal.m */; };
@@ -187,8 +185,6 @@
 		B324820A1A6B546200CD9244 /* swarmatronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swarmatronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B324820F1A6B546200CD9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32482101A6B546200CD9244 /* swarmatronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swarmatronTests.m; sourceTree = "<group>"; };
-		B341A8461A6C0AF2004CFE0D /* FMOscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOscillator.h; sourceTree = "<group>"; };
-		B341A8471A6C0AF2004CFE0D /* FMOscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOscillator.m; sourceTree = "<group>"; };
 		B3B0607D1A6B664E008F3412 /* AKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKEvent.h; sourceTree = "<group>"; };
 		B3B0607E1A6B664E008F3412 /* AKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKEvent.m; sourceTree = "<group>"; };
 		B3B0607F1A6B664E008F3412 /* AKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFoundation.h; sourceTree = "<group>"; };
@@ -247,7 +243,6 @@
 		B3B060C21A6B664E008F3412 /* mandpluk.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = mandpluk.aif; sourceTree = "<group>"; };
 		B3B060C31A6B664E008F3412 /* marmstk1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = marmstk1.wav; sourceTree = "<group>"; };
 		B3B060C41A6B664E008F3412 /* PianoBassDrumLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PianoBassDrumLoop.wav; sourceTree = "<group>"; };
-		B3B060C61A6B664E008F3412 /* AudioKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKit.swift; sourceTree = "<group>"; };
 		B3B060C81A6B664E008F3412 /* AKParameter+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKParameter+Operation.h"; sourceTree = "<group>"; };
 		B3B060C91A6B664E008F3412 /* AKParameter+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKParameter+Operation.m"; sourceTree = "<group>"; };
 		B3B060CB1A6B664E008F3412 /* AKTrackedAmplitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTrackedAmplitude.h; sourceTree = "<group>"; };
@@ -551,8 +546,6 @@
 				B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */,
 				B3F758EF1A6D9F2D008915EE /* RWKnobRenderer.h */,
 				B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */,
-				B341A8461A6C0AF2004CFE0D /* FMOscillator.h */,
-				B341A8471A6C0AF2004CFE0D /* FMOscillator.m */,
 				B32481F81A6B546200CD9244 /* AppDelegate.h */,
 				B32481F91A6B546200CD9244 /* AppDelegate.m */,
 				B32481FB1A6B546200CD9244 /* ViewController.h */,
@@ -636,7 +629,6 @@
 			children = (
 				B3B060931A6B664E008F3412 /* iOS */,
 				B3B060C01A6B664E008F3412 /* Sound Files */,
-				B3B060C51A6B664E008F3412 /* Swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -722,14 +714,6 @@
 				B3B060C41A6B664E008F3412 /* PianoBassDrumLoop.wav */,
 			);
 			path = "Sound Files";
-			sourceTree = "<group>";
-		};
-		B3B060C51A6B664E008F3412 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				B3B060C61A6B664E008F3412 /* AudioKit.swift */,
-			);
-			path = Swift;
 			sourceTree = "<group>";
 		};
 		B3B060C71A6B664E008F3412 /* Operations */ = {
@@ -1383,7 +1367,6 @@
 				B3F758F11A6D9F2D008915EE /* RWKnobControl.m in Sources */,
 				B3B061E41A6B664F008F3412 /* AKOrchestra.m in Sources */,
 				B3B0624E1A6B664F008F3412 /* AKFlanger.m in Sources */,
-				B341A8481A6C0AF2004CFE0D /* FMOscillator.m in Sources */,
 				B3B062361A6B664F008F3412 /* AKStick.m in Sources */,
 				B32481FD1A6B546200CD9244 /* ViewController.m in Sources */,
 				B3B061F51A6B664F008F3412 /* AKParameter+Operation.m in Sources */,
@@ -1453,7 +1436,6 @@
 				B3B0621E1A6B664F008F3412 /* AKLinearADSREnvelope.m in Sources */,
 				B3B0625E1A6B664F008F3412 /* AKDeclick.m in Sources */,
 				B3B062571A6B664F008F3412 /* AKResonantFilter.m in Sources */,
-				B3B061F41A6B664F008F3412 /* AudioKit.swift in Sources */,
 				B3B062351A6B664F008F3412 /* AKSleighbells.m in Sources */,
 				B3B0622E1A6B664F008F3412 /* AKBambooSticks.m in Sources */,
 				B32481F71A6B546200CD9244 /* main.m in Sources */,
