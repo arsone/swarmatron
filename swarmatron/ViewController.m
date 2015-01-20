@@ -9,10 +9,11 @@
 #import "ViewController.h"
 #import "AKFoundation.h"
 #import "RWKnobControl.h"
+#import "SomeInstrument.h"
 
 
 @interface ViewController () {
-//    AKFMOscillator *fm;
+    SomeInstrument *fm;
     RWKnobControl *_knobControl;
 }
 
@@ -24,11 +25,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    fm = [[AKFMOscillator alloc] init];
-//    [AKOrchestra addInstrument:fm];
-//    [AKOrchestra start];
-//    fm.amplitude.value = fm.amplitude.minimum;
-//    [fm play];
+    fm = [[SomeInstrument alloc] init];
+    
+    [AKOrchestra addInstrument:fm];
+    [AKOrchestra start];
+
     
     _knobControl = [[RWKnobControl alloc] initWithFrame:self.knobPlaceHolder.bounds];
     [self.knobPlaceHolder addSubview:_knobControl];
@@ -52,6 +53,7 @@
 }
 
 - (IBAction)handleValueChanged:(id)sender {
+    [fm play];
     
 }
 
@@ -62,6 +64,7 @@
 {
     if(object == _knobControl && [keyPath isEqualToString:@"value"]) {
         self.valueLabel.text = [NSString stringWithFormat:@"%0.2f", _knobControl.value];
+    
     }
 }
 

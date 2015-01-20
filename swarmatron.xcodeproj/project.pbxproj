@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A99C2581A6E2D0900DA9920 /* SomeInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C2571A6E2D0900DA9920 /* SomeInstrument.m */; };
 		B32481F71A6B546200CD9244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B32481F61A6B546200CD9244 /* main.m */; };
 		B32481FA1A6B546200CD9244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B32481F91A6B546200CD9244 /* AppDelegate.m */; };
 		B32481FD1A6B546200CD9244 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32481FC1A6B546200CD9244 /* ViewController.m */; };
@@ -172,6 +173,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A99C2561A6E2D0900DA9920 /* SomeInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeInstrument.h; sourceTree = "<group>"; };
+		1A99C2571A6E2D0900DA9920 /* SomeInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeInstrument.m; sourceTree = "<group>"; };
 		B32481F11A6B546200CD9244 /* swarmatron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swarmatron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32481F51A6B546200CD9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32481F61A6B546200CD9244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -554,6 +557,8 @@
 				B32482011A6B546200CD9244 /* Images.xcassets */,
 				B32482031A6B546200CD9244 /* LaunchScreen.xib */,
 				B32481F41A6B546200CD9244 /* Supporting Files */,
+				1A99C2561A6E2D0900DA9920 /* SomeInstrument.h */,
+				1A99C2571A6E2D0900DA9920 /* SomeInstrument.m */,
 			);
 			path = swarmatron;
 			sourceTree = "<group>";
@@ -1421,6 +1426,7 @@
 				B3B061E31A6B664F008F3412 /* AKNote.m in Sources */,
 				B3B062001A6B664F008F3412 /* AKFunctionTable.m in Sources */,
 				B3B061FC1A6B664F008F3412 /* AKTableValueControl.m in Sources */,
+				1A99C2581A6E2D0900DA9920 /* SomeInstrument.m in Sources */,
 				B3B0625D1A6B664F008F3412 /* AKLowPassButterworthFilter.m in Sources */,
 				B3B0626F1A6B664F008F3412 /* AKAudioAnalyzer.m in Sources */,
 				B3B0625A1A6B664F008F3412 /* AKBandPassButterworthFilter.m in Sources */,
