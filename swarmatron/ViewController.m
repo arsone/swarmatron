@@ -17,9 +17,13 @@
     RWKnobControl *_knobControl;
 }
 
+@property (strong, nonatomic) NSMutableArray *oscillators;
+
 @end
 
 @implementation ViewController
+
+@synthesize oscillators = _oscillators;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,10 +44,17 @@
     
     [_knobControl addObserver:self forKeyPath:@"value" options:0 context:NULL];
     
+    _oscillators = [[NSMutableArray alloc] initWithCapacity:8];
+    
+    for (int i = 0; i < 8; i++) {
+        _oscillators[i] = [[SomeInstrument alloc] init];
+    }
+
+    
     // hooks up the knob control
-    [_knobControl addTarget:self
-                     action:@selector(handleValueChanged:)
-           forControlEvents:UIControlEventValueChanged];
+//    [_knobControl addTarget:self
+//                     action:@selector(handleValueChanged:)
+//           forControlEvents:UIControlEventValueChanged];
     
 }
 
@@ -52,10 +63,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)handleValueChanged:(id)sender {
-    [fm play];
+- (IBAction)oscBank:(UISwitch *)sender {
+    UISwitch *someSwitch = (UISwitch *)sender;
     
+    if(someSwitch.on) {
+        [_oscillators[sender.tag] play];
+    } else {
+        [_oscillators[sender.tag] stop];
+    }
 }
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
