@@ -12,6 +12,8 @@
 	<dict>
 		<key>766DD6BC6045477A9D4CA9393981E3C17D98E863</key>
 		<string>https://github.com/arsone/swarmatron.git</string>
+		<key>D82AA031F79E1AA64C510D0C546DA70E17C15D02</key>
+		<string>https://github.com/ascorbic/logarithmic-slider.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>swarmatron.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>766DD6BC6045477A9D4CA9393981E3C17D98E863</key>
 		<string>../..</string>
+		<key>D82AA031F79E1AA64C510D0C546DA70E17C15D02</key>
+		<string>../../swarmatron/logarithmic-slider/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/arsone/swarmatron.git</string>
@@ -28,6 +32,14 @@
 	<string>766DD6BC6045477A9D4CA9393981E3C17D98E863</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D82AA031F79E1AA64C510D0C546DA70E17C15D02</string>
+			<key>IDESourceControlWCCName</key>
+			<string>logarithmic-slider</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

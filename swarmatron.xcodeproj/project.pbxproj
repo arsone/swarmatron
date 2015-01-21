@@ -15,6 +15,8 @@
 		B32482021A6B546200CD9244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32482011A6B546200CD9244 /* Images.xcassets */; };
 		B32482051A6B546200CD9244 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32482031A6B546200CD9244 /* LaunchScreen.xib */; };
 		B32482111A6B546200CD9244 /* swarmatronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32482101A6B546200CD9244 /* swarmatronTests.m */; };
+		B37749811A70339B007B182C /* LogarithmicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B377497F1A70339B007B182C /* LogarithmicSlider.m */; };
+		B37749821A70339B007B182C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B37749801A70339B007B182C /* README.md */; };
 		B3B061DF1A6B664F008F3412 /* AKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0607E1A6B664E008F3412 /* AKEvent.m */; };
 		B3B061E01A6B664F008F3412 /* AKInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060811A6B664E008F3412 /* AKInstrument.m */; };
 		B3B061E11A6B664F008F3412 /* AKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B060831A6B664E008F3412 /* AKManager.m */; };
@@ -188,6 +190,9 @@
 		B324820A1A6B546200CD9244 /* swarmatronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swarmatronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B324820F1A6B546200CD9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32482101A6B546200CD9244 /* swarmatronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swarmatronTests.m; sourceTree = "<group>"; };
+		B377497E1A70339B007B182C /* LogarithmicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogarithmicSlider.h; sourceTree = "<group>"; };
+		B377497F1A70339B007B182C /* LogarithmicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogarithmicSlider.m; sourceTree = "<group>"; };
+		B37749801A70339B007B182C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3B0607D1A6B664E008F3412 /* AKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKEvent.h; sourceTree = "<group>"; };
 		B3B0607E1A6B664E008F3412 /* AKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKEvent.m; sourceTree = "<group>"; };
 		B3B0607F1A6B664E008F3412 /* AKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFoundation.h; sourceTree = "<group>"; };
@@ -543,6 +548,7 @@
 		B32481F31A6B546200CD9244 /* swarmatron */ = {
 			isa = PBXGroup;
 			children = (
+				B377497D1A70339B007B182C /* logarithmic-slider */,
 				B3F758EB1A6D9F2D008915EE /* RWKnobControl.h */,
 				B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */,
 				B3F758ED1A6D9F2D008915EE /* RWRotationGestureRecognizer.h */,
@@ -587,6 +593,16 @@
 				B324820F1A6B546200CD9244 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B377497D1A70339B007B182C /* logarithmic-slider */ = {
+			isa = PBXGroup;
+			children = (
+				B377497E1A70339B007B182C /* LogarithmicSlider.h */,
+				B377497F1A70339B007B182C /* LogarithmicSlider.m */,
+				B37749801A70339B007B182C /* README.md */,
+			);
+			path = "logarithmic-slider";
 			sourceTree = "<group>";
 		};
 		B3B0607B1A6B664E008F3412 /* AudioKit */ = {
@@ -1443,6 +1459,7 @@
 				B3B0625E1A6B664F008F3412 /* AKDeclick.m in Sources */,
 				B3B062571A6B664F008F3412 /* AKResonantFilter.m in Sources */,
 				B3B062351A6B664F008F3412 /* AKSleighbells.m in Sources */,
+				B37749821A70339B007B182C /* README.md in Sources */,
 				B3B0622E1A6B664F008F3412 /* AKBambooSticks.m in Sources */,
 				B32481F71A6B546200CD9244 /* main.m in Sources */,
 				B3B0620B1A6B664F008F3412 /* AKMaxAudio.m in Sources */,
@@ -1467,6 +1484,7 @@
 				B3B062691A6B664F008F3412 /* AKControl.m in Sources */,
 				B3B062431A6B664F008F3412 /* AKAudioOutput.m in Sources */,
 				B3B062601A6B664F008F3412 /* AKBallWithinTheBoxReverb.m in Sources */,
+				B37749811A70339B007B182C /* LogarithmicSlider.m in Sources */,
 				B3B062191A6B664F008F3412 /* AKScaledFSignal.m in Sources */,
 				B3B0623D1A6B664F008F3412 /* AKJitter.m in Sources */,
 				B3B0625C1A6B664F008F3412 /* AKHighPassButterworthFilter.m in Sources */,
