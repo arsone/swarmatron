@@ -22,8 +22,16 @@
     self = [super init];
     
     if (self) {
+        
+        _frequencyValue = [[AKInstrumentProperty alloc] initWithValue:440
+                                                              minimum:150
+                                                              maximum:2400];
+        
+        [self addProperty:_frequencyValue];
+        
         AKFMOscillator *fmOscillator;
         fmOscillator = [[AKFMOscillator alloc] init];
+        fmOscillator.baseFrequency = _frequencyValue;
         [self connect: fmOscillator];
         
         AKAudioOutput *audioOutput = [[AKAudioOutput alloc] initWithAudioSource:fmOscillator];

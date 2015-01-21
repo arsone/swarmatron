@@ -10,4 +10,6 @@
 
 @interface SomeInstrument : AKInstrument
 
+@property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
+
 @end

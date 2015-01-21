@@ -10,6 +10,7 @@
 #import "AKFoundation.h"
 #import "RWKnobControl.h"
 #import "SomeInstrument.h"
+#import "AKTools.h"
 
 
 @interface ViewController () {
@@ -84,6 +85,11 @@
     
     }
 }
+
+- (IBAction)changeFrequency:(id)sender {
+    [AKTools setProperty:fm.frequencyValue withSlider:(UISlider *)sender];
+}
+
 
 
 @end
