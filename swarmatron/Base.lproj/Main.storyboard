@@ -22,19 +22,16 @@
                                     <action selector="changeFrequency:" destination="vXZ-lx-hvc" eventType="valueChanged" id="gYk-Uc-ZWj"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h2U-7K-gsD">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="h2U-7K-gsD">
                                 <rect key="frame" x="62" y="579" width="250" height="31"/>
+                                <connections>
+                                    <action selector="changeModIndex:" destination="vXZ-lx-hvc" eventType="valueChanged" id="J04-xW-AYl"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fundamental" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYe-PR-d79">
                                 <rect key="frame" x="137" y="458" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.56470590829849243" green="0.79607850313186646" blue="0.80392163991928101" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filter Cutoff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSS-lW-9Y7">
-                                <rect key="frame" x="142" y="550" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.57254904508590698" green="0.80392163991928101" blue="0.81176477670669556" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AoV-Wv-TBZ">
@@ -104,6 +101,12 @@
                                 <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modulation Index" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSS-lW-9Y7">
+                                <rect key="frame" x="120" y="550" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57254904508590698" green="0.80392163991928101" blue="0.81176477670669556" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1098039299249649" green="0.11372549831867218" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
                         <gestureRecognizers/>
@@ -114,7 +117,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="knobPlaceHolder" destination="QXj-L2-YsW" id="Pcf-PB-z6s"/>
-                        <outlet property="oscBank" destination="0mn-Ox-lY6" id="dbf-uR-SZO"/>
+                        <outlet property="oscBank" destination="AoV-Wv-TBZ" id="oxm-hp-rwH"/>
                         <outlet property="valueLabel" destination="mEj-eK-PUO" id="Xqp-vl-N3K"/>
                     </connections>
                 </viewController>

@@ -11,5 +11,6 @@
 @interface SomeInstrument : AKInstrument
 
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
+@property (nonatomic, strong) AKInstrumentProperty *modIndexValue;
 
 @end

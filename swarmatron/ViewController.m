@@ -29,13 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    fm = [[SomeInstrument alloc] init];
-    
-    [AKOrchestra addInstrument:fm];
-    [AKOrchestra start];
 
-    
     _knobControl = [[RWKnobControl alloc] initWithFrame:self.knobPlaceHolder.bounds];
     [self.knobPlaceHolder addSubview:_knobControl];
     
@@ -45,11 +39,20 @@
     
     [_knobControl addObserver:self forKeyPath:@"value" options:0 context:NULL];
     
+    fm = [[SomeInstrument alloc] init];
+    
+    [AKOrchestra addInstrument:fm];
+    
     _oscillators = [[NSMutableArray alloc] initWithCapacity:8];
     
     for (int i = 0; i < 8; i++) {
         _oscillators[i] = [[SomeInstrument alloc] init];
+        [AKOrchestra addInstrument:_oscillators[i]];
     }
+    
+    [self updateFrequency:10];
+    
+    [AKOrchestra start];
 
     
     // hooks up the knob control
@@ -86,10 +89,43 @@
     }
 }
 
-- (IBAction)changeFrequency:(id)sender {
-    [AKTools setProperty:fm.frequencyValue withSlider:(UISlider *)sender];
+- (void)updateFrequency:(float) step {
+    for (int i=1; i<8; i++) {
+        AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+        
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + step;
+    }
 }
 
+- (void)updateModIndex:(float) step {
+    for (int i = 1; i < 8; i++) {
+        AKInstrumentProperty *modIndex = ((SomeInstrument*)_oscillators[i-1]).modIndexValue;
+        
+        ((SomeInstrument*)_oscillators[i]).modIndexValue.value = modIndex.value + step;
+    }
+}
+
+- (IBAction)changeFrequency:(id)sender {
+
+    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
+    
+    for(int i = 1; i < 8; i++) {
+        AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+        
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + 10;
+    }
+}
+
+- (IBAction)changeModIndex:(id)sender {
+    
+    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).modIndexValue withSlider:(UISlider *)sender];
+    
+    for(int i = 1; i < 8; i++) {
+        AKInstrumentProperty *modIndex = ((SomeInstrument*)_oscillators[i-1]).modIndexValue;
+        
+        ((SomeInstrument*)_oscillators[i]).modIndexValue.value = modIndex.value;
+    }
+}
 
 
 @end

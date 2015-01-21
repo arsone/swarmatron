@@ -27,11 +27,17 @@
                                                               minimum:150
                                                               maximum:2400];
         
+        _modIndexValue = [[AKInstrumentProperty alloc] initWithValue:3
+                                                             minimum:0
+                                                             maximum:30];
+        
         [self addProperty:_frequencyValue];
+        [self addProperty:_modIndexValue];
         
         AKFMOscillator *fmOscillator;
         fmOscillator = [[AKFMOscillator alloc] init];
         fmOscillator.baseFrequency = _frequencyValue;
+        fmOscillator.modulationIndex = _modIndexValue;
         [self connect: fmOscillator];
         
         AKAudioOutput *audioOutput = [[AKAudioOutput alloc] initWithAudioSource:fmOscillator];
