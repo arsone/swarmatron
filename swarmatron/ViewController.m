@@ -86,7 +86,13 @@
 {
     if(object == _knobControl && [keyPath isEqualToString:@"value"]) {
         self.valueLabel.text = [NSString stringWithFormat:@"%0.2f", _knobControl.value];
-    
+        
+        for (int i = 1; i <8; i++) {
+            AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+            
+            ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + _knobControl.value;
+            NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
+        }    
     }
 }
 
@@ -122,6 +128,7 @@
         AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
         
         ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + _knobControl.value;
+        NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
     }
 }
 

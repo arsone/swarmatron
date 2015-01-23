@@ -22,7 +22,7 @@
 		<key>766DD6BC6045477A9D4CA9393981E3C17D98E863</key>
 		<string>../..</string>
 		<key>D82AA031F79E1AA64C510D0C546DA70E17C15D02</key>
-		<string>../../swarmatron/logarithmic-slider/</string>
+		<string>../../swarmatron/logarithmic-slider</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/arsone/swarmatron.git</string>

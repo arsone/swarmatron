@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="440" minValue="50" maxValue="3400" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-so-O8b" customClass="LogarithmicSlider">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="220" minValue="30" maxValue="1800" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-so-O8b" customClass="LogarithmicSlider">
                                 <rect key="frame" x="12" y="458" width="350" height="31"/>
                                 <connections>
                                     <action selector="changeFrequency:" destination="vXZ-lx-hvc" eventType="valueChanged" id="gYk-Uc-ZWj"/>
