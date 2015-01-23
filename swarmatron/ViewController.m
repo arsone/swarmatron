@@ -12,6 +12,7 @@
 #import "SomeInstrument.h"
 #import "AKTools.h"
 #import "LogarithmicSlider.h"
+#import "ADSREnvelope.h"
 
 
 @interface ViewController () {

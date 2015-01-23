@@ -25,7 +25,7 @@
         
         _frequencyValue = [[AKInstrumentProperty alloc] initWithValue:220
                                                               minimum:30
-                                                              maximum:1800];
+                                                              maximum:770];
         
         _modIndexValue = [[AKInstrumentProperty alloc] initWithValue:3
                                                              minimum:0

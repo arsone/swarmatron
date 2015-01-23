@@ -159,6 +159,7 @@
 		B3B0626E1A6B664F008F3412 /* AKNoteProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061D91A6B664F008F3412 /* AKNoteProperty.m */; };
 		B3B0626F1A6B664F008F3412 /* AKAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061DC1A6B664F008F3412 /* AKAudioAnalyzer.m */; };
 		B3B062701A6B664F008F3412 /* LevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B061DE1A6B664F008F3412 /* LevelMeter.m */; };
+		B3CE8BBB1A71F7DC00EF0241 /* ADSREnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8BBA1A71F7DC00EF0241 /* ADSREnvelope.m */; };
 		B3F758F11A6D9F2D008915EE /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */; };
 		B3F758F21A6D9F2D008915EE /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */; };
 		B3F758F31A6D9F2D008915EE /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */; };
@@ -498,6 +499,8 @@
 		B3B061DC1A6B664F008F3412 /* AKAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAudioAnalyzer.m; sourceTree = "<group>"; };
 		B3B061DD1A6B664F008F3412 /* LevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelMeter.h; sourceTree = "<group>"; };
 		B3B061DE1A6B664F008F3412 /* LevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelMeter.m; sourceTree = "<group>"; };
+		B3CE8BB91A71F7DC00EF0241 /* ADSREnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSREnvelope.h; sourceTree = "<group>"; };
+		B3CE8BBA1A71F7DC00EF0241 /* ADSREnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSREnvelope.m; sourceTree = "<group>"; };
 		B3F758EB1A6D9F2D008915EE /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
 		B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobControl.m; sourceTree = "<group>"; };
 		B3F758ED1A6D9F2D008915EE /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
@@ -559,6 +562,8 @@
 				B32481F91A6B546200CD9244 /* AppDelegate.m */,
 				B32481FB1A6B546200CD9244 /* ViewController.h */,
 				B32481FC1A6B546200CD9244 /* ViewController.m */,
+				B3CE8BB91A71F7DC00EF0241 /* ADSREnvelope.h */,
+				B3CE8BBA1A71F7DC00EF0241 /* ADSREnvelope.m */,
 				B32481FE1A6B546200CD9244 /* Main.storyboard */,
 				B32482011A6B546200CD9244 /* Images.xcassets */,
 				B32482031A6B546200CD9244 /* LaunchScreen.xib */,
@@ -1352,6 +1357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B062211A6B664F008F3412 /* AKSinusoidBursts.m in Sources */,
+				B3CE8BBB1A71F7DC00EF0241 /* ADSREnvelope.m in Sources */,
 				B3B062081A6B664F008F3412 /* AKStereoSoundFileLooper.m in Sources */,
 				B3B062481A6B664F008F3412 /* AKStereoConvolution.m in Sources */,
 				B3B061E81A6B664F008F3412 /* AKTools.m in Sources */,
