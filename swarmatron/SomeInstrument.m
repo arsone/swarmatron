@@ -23,9 +23,9 @@
     
     if (self) {
         
-        _frequencyValue = [[AKInstrumentProperty alloc] initWithValue:220
-                                                              minimum:30
-                                                              maximum:770];
+        _frequencyValue = [[AKInstrumentProperty alloc] initWithValue:196
+                                                              minimum:49
+                                                              maximum:784];
         
         _modIndexValue = [[AKInstrumentProperty alloc] initWithValue:3
                                                              minimum:0

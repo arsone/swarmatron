@@ -13,5 +13,6 @@
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
 @property (nonatomic, strong) AKInstrumentProperty *modIndexValue;
 @property (nonatomic, strong) AKInstrumentProperty *carrierMultValue;
+@property AKFunctionTable *functionTable;
 
 @end
