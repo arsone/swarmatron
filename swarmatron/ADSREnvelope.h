@@ -16,6 +16,10 @@
 @property AKConstant *releaseDuration;
 @property AKConstant *sustainLevel;
 
-- (instancetype)initWithAttackDuration:(AKConstant *)attackDuration decayDuration:(AKConstant *)decayDuration sustainLevel:(AKConstant *)sustainLevel releaseDuration:(AKConstant *)releaseDuration delay:(AKConstant *)delay;
+- (instancetype)initWithAttackDuration:(AKConstant *)attackDuration
+                         decayDuration:(AKConstant *)decayDuration
+                          sustainLevel:(AKConstant *)sustainLevel
+                       releaseDuration:(AKConstant *)releaseDuration
+                                 delay:(AKConstant *)delay;
 
 @end
