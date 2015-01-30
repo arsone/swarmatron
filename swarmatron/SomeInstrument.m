@@ -27,7 +27,7 @@
                                                               minimum:49
                                                               maximum:784];
         
-        _modIndexValue = [[AKInstrumentProperty alloc] initWithValue:3
+        _modIndexValue = [[AKInstrumentProperty alloc] initWithValue:0
                                                              minimum:0
                                                              maximum:30];
         
@@ -35,9 +35,14 @@
                                                                 minimum:0
                                                                 maximum:1];
         
+        _amplitudeValue = [[AKInstrumentProperty alloc] initWithValue:0.1
+                                                              minimum:0
+                                                              maximum:0.5];
+        
         [self addProperty:_frequencyValue];
         [self addProperty:_modIndexValue];
         [self addProperty:_carrierMultValue];
+        [self addProperty:_amplitudeValue];
         
         AKFMOscillator *fmOscillator;
         fmOscillator = [[AKFMOscillator alloc] init];

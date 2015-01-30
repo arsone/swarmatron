@@ -12,7 +12,7 @@
 #import "SomeInstrument.h"
 #import "AKTools.h"
 #import "LogarithmicSlider.h"
-#import "ADSREnvelope.h"
+//#import "ADSREnvelope.h"
 
 
 @interface ViewController () {
@@ -121,6 +121,10 @@
     }
 }
 
+- (void)updateAmplitude:(float) step {
+    // TODO: add method here to divide oscillator amplitude value by total number of active oscillators
+}
+
 - (IBAction)changeFrequency:(id)sender {
 
     [AKTools setProperty:((SomeInstrument*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
@@ -133,26 +137,26 @@
     }
 }
 
-- (IBAction)changeModIndex:(id)sender {
-    
-    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).modIndexValue withSlider:(UISlider *)sender];
-    
-    for(int i = 1; i < 8; i++) {
-        AKInstrumentProperty *modIndex = ((SomeInstrument*)_oscillators[i-1]).modIndexValue;
-        
-        ((SomeInstrument*)_oscillators[i]).modIndexValue.value = modIndex.value;
-    }
-}
-
-- (IBAction)changeCarrierMult:(id)sender {
-    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).carrierMultValue withSlider:(UISlider *)sender];
-    
-    for(int i = 1; i < 8; i++) {
-        AKInstrumentProperty *carrierMult = ((SomeInstrument*)_oscillators[i-1]).carrierMultValue;
-        
-        ((SomeInstrument*)_oscillators[i]).carrierMultValue.value = carrierMult.value;
-    }
-}
+//- (IBAction)changeModIndex:(id)sender {
+//    
+//    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).modIndexValue withSlider:(UISlider *)sender];
+//    
+//    for(int i = 1; i < 8; i++) {
+//        AKInstrumentProperty *modIndex = ((SomeInstrument*)_oscillators[i-1]).modIndexValue;
+//        
+//        ((SomeInstrument*)_oscillators[i]).modIndexValue.value = modIndex.value;
+//    }
+//}
+//
+//- (IBAction)changeCarrierMult:(id)sender {
+//    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).carrierMultValue withSlider:(UISlider *)sender];
+//    
+//    for(int i = 1; i < 8; i++) {
+//        AKInstrumentProperty *carrierMult = ((SomeInstrument*)_oscillators[i-1]).carrierMultValue;
+//        
+//        ((SomeInstrument*)_oscillators[i]).carrierMultValue.value = carrierMult.value;
+//    }
+//}
 
 
 @end
