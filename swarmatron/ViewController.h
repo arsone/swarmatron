@@ -16,5 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *oscBank;
 
+@property int totalPlaying;
+
 @end
 
