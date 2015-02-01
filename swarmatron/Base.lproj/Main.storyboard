@@ -83,7 +83,7 @@
                                 <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="196" minValue="49" maxValue="784" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-so-O8b">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="150" maxValue="1200" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-so-O8b">
                                 <rect key="frame" x="23" y="467" width="275" height="31"/>
                                 <connections>
                                     <action selector="changeFrequency:" destination="vXZ-lx-hvc" eventType="valueChanged" id="gYk-Uc-ZWj"/>

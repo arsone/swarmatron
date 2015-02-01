@@ -28,7 +28,7 @@
         // self.backgroundColor = [UIColor blueColor];
         
         _minimumValue = 100;
-        _maximumValue = 8000.0;
+        _maximumValue = 15000.0;
                _value = 10.0;
           _continuous = YES;
    _gestureRecognizer = [[RWRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
