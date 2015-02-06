@@ -12,7 +12,6 @@
 #import "SomeInstrument.h"
 #import "AKTools.h"
 #import "LogarithmicSlider.h"
-#include "math.h"
 //#import "ADSREnvelope.h"
 
 
@@ -75,10 +74,8 @@
     
     if(someSwitch.on) {
         [_oscillators[sender.tag] play];
-        self.totalPlaying++;
     } else {
         [_oscillators[sender.tag] stop];
-        self.totalPlaying--;
     }
 }
 
@@ -91,12 +88,10 @@
     if(object == _knobControl && [keyPath isEqualToString:@"value"]) {
         self.valueLabel.text = [NSString stringWithFormat:@"%0.2f", _knobControl.value];
         
-        float loggedValue = log(_knobControl.value);
-        
         for (int i = 1; i <8; i++) {
             AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
             
-            ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + loggedValue;
+            ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + _knobControl.value;
             NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
         }    
     }
@@ -127,11 +122,7 @@
 }
 
 - (void)updateAmplitude:(float) step {
-    if (self.totalPlaying > 0) {
-    AKInstrumentProperty *ampValue = ((SomeInstrument*)_oscillators).amplitudeValue;
-    
-    ((SomeInstrument*)_oscillators).amplitudeValue.value = ampValue.value/(float)self.totalPlaying;
-    }
+    // TODO: add method here to divide oscillator amplitude value by total number of active oscillators
 }
 
 - (IBAction)changeFrequency:(id)sender {
