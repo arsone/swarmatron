@@ -27,13 +27,8 @@
         
         // self.backgroundColor = [UIColor blueColor];
         
-<<<<<<< HEAD
-        _minimumValue = 100;
-        _maximumValue = 15000.0;
-=======
         _minimumValue = 0;
         _maximumValue = 600.0;
->>>>>>> parent of 133a9ac... added fix for amplitude issue. Converted span knob to log scale.
                _value = 10.0;
           _continuous = YES;
    _gestureRecognizer = [[RWRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
