@@ -89,10 +89,6 @@
         self.valueLabel.text = [NSString stringWithFormat:@"%0.2f", _knobControl.value];
         
         for (int i = 1; i <8; i++) {
-//            AKInstrumentProperty *freqValue = ((SomeInstrument *)_oscillators[i-1]).frequencyValue;
-//            
-//            ((SomeInstrument*)_oscillators[i]).frequencyValue.value = freqValue.value + ([i] * freqValue * (freqValue.value / freqValue.maximum));
-            
             
             AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
             
@@ -107,7 +103,7 @@
     for (int i = 1; i < 8; i++) {
         AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + step;
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) + step;
     }
 }
 
@@ -135,12 +131,10 @@
 
     [AKTools setProperty:((SomeInstrument*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
     
-    float loggedValue = log(_knobControl.value);
-    
     for(int i = 1; i < 8; i++) {
         AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + loggedValue;
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue));
         NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
     }
 }
