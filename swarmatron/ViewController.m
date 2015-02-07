@@ -10,6 +10,7 @@
 #import "AKFoundation.h"
 #import "RWKnobControl.h"
 #import "SomeInstrument.h"
+#import "VCOsc.h"
 #import "AKTools.h"
 #import "LogarithmicSlider.h"
 //#import "ADSREnvelope.h"
@@ -17,6 +18,7 @@
 
 @interface ViewController () {
     SomeInstrument *fm;
+    VCOsc *vcOsc;
     RWKnobControl *_knobControl;
 }
 
@@ -41,14 +43,14 @@
     
     [_knobControl addObserver:self forKeyPath:@"value" options:0 context:NULL];
     
-    fm = [[SomeInstrument alloc] init];
+    vcOsc = [[VCOsc alloc] init];
     
-    [AKOrchestra addInstrument:fm];
+    [AKOrchestra addInstrument:vcOsc];
     
     _oscillators = [[NSMutableArray alloc] initWithCapacity:8];
     
     for (int i = 0; i < 8; i++) {
-        _oscillators[i] = [[SomeInstrument alloc] init];
+        _oscillators[i] = [[VCOsc alloc] init];
         [AKOrchestra addInstrument:_oscillators[i]];
     }
     
@@ -90,52 +92,52 @@
         
         for (int i = 1; i <8; i++) {
             
-            AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+            AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
             
-            ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value
+            ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value
                                                                                          *(_knobControl.value / _knobControl.maximumValue)) / 100;
-            NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
+            NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequencyValue.value);
         }
     }
 }
 
 - (void)updateFrequency:(float) step {
     for (int i = 1; i < 8; i++) {
-        AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100 + step;
+        ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100 + step;
     }
 }
 
-- (void)updateModIndex:(float) step {
-    for (int i = 1; i < 8; i++) {
-        AKInstrumentProperty *modIndex = ((SomeInstrument*)_oscillators[i-1]).modIndexValue;
-        
-        ((SomeInstrument*)_oscillators[i]).modIndexValue.value = modIndex.value + step;
-    }
-}
+//- (void)updateModIndex:(float) step {
+//    for (int i = 1; i < 8; i++) {
+//        AKInstrumentProperty *modIndex = ((VCOsc*)_oscillators[i-1]).modIndexValue;
+//        
+//        ((VCOsc*)_oscillators[i]).modIndexValue.value = modIndex.value + step;
+//    }
+//}
 
-- (void)updateCarrierMod:(float) step {
-    for (int i = 1; i < 8; i++) {
-        AKInstrumentProperty *carrierMult = ((SomeInstrument*)_oscillators[i-1]).carrierMultValue;
-        
-        ((SomeInstrument*)_oscillators[i]).carrierMultValue.value = carrierMult.value + step;
-    }
-}
+//- (void)updateCarrierMod:(float) step {
+//    for (int i = 1; i < 8; i++) {
+//        AKInstrumentProperty *carrierMult = ((SomeInstrument*)_oscillators[i-1]).carrierMultValue;
+//        
+//        ((SomeInstrument*)_oscillators[i]).carrierMultValue.value = carrierMult.value + step;
+//    }
+//}
 
-- (void)updateAmplitude:(float) step {
-    // TODO: add method here to divide oscillator amplitude value by total number of active oscillators
-}
+//- (void)updateAmplitude:(float) step {
+//    // TODO: add method here to divide oscillator amplitude value by total number of active oscillators
+//}
 
 - (IBAction)changeFrequency:(id)sender {
 
-    [AKTools setProperty:((SomeInstrument*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
+    [AKTools setProperty:((VCOsc*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
     
     for(int i = 1; i < 8; i++) {
-        AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
+        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100;
-        NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
+        ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100;
+        NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequencyValue.value);
     }
 }
 

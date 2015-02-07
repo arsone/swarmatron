@@ -163,6 +163,7 @@
 		B3F758F11A6D9F2D008915EE /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EC1A6D9F2D008915EE /* RWKnobControl.m */; };
 		B3F758F21A6D9F2D008915EE /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */; };
 		B3F758F31A6D9F2D008915EE /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */; };
+		B3F96A921A86D2920031AEE7 /* VCOsc.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F96A911A86D2920031AEE7 /* VCOsc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -507,6 +508,8 @@
 		B3F758EE1A6D9F2D008915EE /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
 		B3F758EF1A6D9F2D008915EE /* RWKnobRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobRenderer.h; sourceTree = "<group>"; };
 		B3F758F01A6D9F2D008915EE /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRenderer.m; sourceTree = "<group>"; };
+		B3F96A901A86D2920031AEE7 /* VCOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCOsc.h; sourceTree = "<group>"; };
+		B3F96A911A86D2920031AEE7 /* VCOsc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCOsc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +573,8 @@
 				B32481F41A6B546200CD9244 /* Supporting Files */,
 				1A99C2561A6E2D0900DA9920 /* SomeInstrument.h */,
 				1A99C2571A6E2D0900DA9920 /* SomeInstrument.m */,
+				B3F96A901A86D2920031AEE7 /* VCOsc.h */,
+				B3F96A911A86D2920031AEE7 /* VCOsc.m */,
 			);
 			path = swarmatron;
 			sourceTree = "<group>";
@@ -1473,6 +1478,7 @@
 				B3B062331A6B664F008F3412 /* AKSandPaper.m in Sources */,
 				B3B062271A6B664F008F3412 /* AKPhasor.m in Sources */,
 				B3B062161A6B664F008F3412 /* AKFSignalFromMonoWithAttackAnalysis.m in Sources */,
+				B3F96A921A86D2920031AEE7 /* VCOsc.m in Sources */,
 				B3B062591A6B664F008F3412 /* AKVariableFrequencyResponseBandPassFilter.m in Sources */,
 				B3B062141A6B664F008F3412 /* AKCrossSynthesis.m in Sources */,
 				B3B062311A6B664F008F3412 /* AKDroplet.m in Sources */,
