@@ -31,4 +31,8 @@
     return self;
 }
 
+- (void)setOptionalWaveformType: (AKVCOscillatorWaveformType)waveformType {
+    
+}
+
 @end

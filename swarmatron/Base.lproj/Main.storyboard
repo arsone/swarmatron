@@ -18,8 +18,7 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AoV-Wv-TBZ">
                                 <rect key="frame" x="50" y="49" width="51" height="31"/>
-                                <color key="tintColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="onTintColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="1" green="0.97447240599999996" blue="0.96237638479999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="oscBank:" destination="vXZ-lx-hvc" eventType="valueChanged" id="nXG-hM-9d3"/>
                                 </connections>
@@ -92,6 +91,25 @@
                                 <rect key="frame" x="110" y="446" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.56470590829849243" green="0.79607850313186646" blue="0.80392163991928101" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-LF-w7j">
+                                <rect key="frame" x="136" y="529" width="51" height="31"/>
+                                <color key="onTintColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="waveformType:" destination="vXZ-lx-hvc" eventType="valueChanged" id="GZp-BL-lux"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-aB-WhJ">
+                                <rect key="frame" x="193" y="534" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-OF-6Sw">
+                                <rect key="frame" x="94" y="534" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
