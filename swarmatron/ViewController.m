@@ -93,7 +93,7 @@
             AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
             
             ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value
-                                                                                         *(_knobControl.value / _knobControl.maximumValue));
+                                                                                         *(_knobControl.value / _knobControl.maximumValue)) / 100;
             NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
         }
     }
@@ -103,7 +103,7 @@
     for (int i = 1; i < 8; i++) {
         AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) + step;
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100 + step;
     }
 }
 
@@ -134,7 +134,7 @@
     for(int i = 1; i < 8; i++) {
         AKInstrumentProperty *prevValue = ((SomeInstrument*)_oscillators[i-1]).frequencyValue;
         
-        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue));
+        ((SomeInstrument*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100;
         NSLog(@"value: %f",  ((SomeInstrument*)_oscillators[i]).frequencyValue.value);
     }
 }
