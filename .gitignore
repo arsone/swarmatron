@@ -3,6 +3,7 @@ build/
 *.pyc
 *~.nib/
 *.pbxuser
+*.pbxproj
 *.perspective
 *.perspectivev3
 *.xcuserstate
