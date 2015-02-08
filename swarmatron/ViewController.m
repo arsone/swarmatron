@@ -141,18 +141,6 @@
     }
 }
 
-- (void)setOptionalWaveformType:(AKVCOscillatorWaveformType)waveformType{
-    
-}
-
-- (IBAction)waveformType:(UISwitch*)sender {
-    UISwitch *waveformType = (UISwitch*)sender;
-    
-    if(waveformType.on) {
-        [waveformType = AKVCOscillatorWaveformTypePulseUnnormalized];
-    }
-    
-}
 
 //- (IBAction)changeModIndex:(id)sender {
 //    

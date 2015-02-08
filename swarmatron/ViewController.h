@@ -16,5 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *oscBank;
 
+@property (weak, nonatomic) IBOutlet UISwitch *waveformType;
+
+
 @end
 
