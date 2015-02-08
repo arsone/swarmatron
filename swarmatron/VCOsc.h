@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
 
+@property AKParameter *halfPowerPoint;
+
 
 @end

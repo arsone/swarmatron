@@ -31,4 +31,10 @@
     return self;
 }
 
+- (void)setOptionalHalfPowerPoint:(AKParameter *)halfPowerPoint {
+    
+    _halfPowerPoint = [[AKParameter alloc] initWithValue:1000];
+    
+}
+
 @end

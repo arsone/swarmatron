@@ -141,6 +141,13 @@
     }
 }
 
+- (IBAction)lowpassFilter:(id)sender {
+
+    [AKTools setProperty:((VCOsc*)_oscillators[0]).halfPowerPoint withSlider:(UISlider *)sender];
+    
+}
+
+
 
 //- (IBAction)changeModIndex:(id)sender {
 //    
