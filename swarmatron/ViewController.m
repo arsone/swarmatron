@@ -164,4 +164,7 @@
 //}
 
 
+- (IBAction)sawSineToggled:(id)sender {
+    //handle the toggle here
+}
 @end
