@@ -16,8 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *oscBank;
 
-@property (weak, nonatomic) IBOutlet UISwitch *waveformType;
-
 - (IBAction)sawSineToggled:(id)sender;
 
 @end
