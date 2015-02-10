@@ -15,6 +15,8 @@
 		B32482021A6B546200CD9244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32482011A6B546200CD9244 /* Images.xcassets */; };
 		B32482051A6B546200CD9244 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32482031A6B546200CD9244 /* LaunchScreen.xib */; };
 		B32482111A6B546200CD9244 /* swarmatronTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32482101A6B546200CD9244 /* swarmatronTests.m */; };
+		B337A6D91A8A97A800E72152 /* saw.png in Resources */ = {isa = PBXBuildFile; fileRef = B337A6D71A8A97A800E72152 /* saw.png */; };
+		B337A6DA1A8A97A800E72152 /* sine.png in Resources */ = {isa = PBXBuildFile; fileRef = B337A6D81A8A97A800E72152 /* sine.png */; };
 		B37749811A70339B007B182C /* LogarithmicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B377497F1A70339B007B182C /* LogarithmicSlider.m */; };
 		B37749821A70339B007B182C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B37749801A70339B007B182C /* README.md */; };
 		B3B061DF1A6B664F008F3412 /* AKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0607E1A6B664E008F3412 /* AKEvent.m */; };
@@ -192,6 +194,8 @@
 		B324820A1A6B546200CD9244 /* swarmatronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swarmatronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B324820F1A6B546200CD9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B32482101A6B546200CD9244 /* swarmatronTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swarmatronTests.m; sourceTree = "<group>"; };
+		B337A6D71A8A97A800E72152 /* saw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saw.png; path = Images.xcassets/saw.png; sourceTree = "<group>"; };
+		B337A6D81A8A97A800E72152 /* sine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sine.png; path = Images.xcassets/sine.png; sourceTree = "<group>"; };
 		B377497E1A70339B007B182C /* LogarithmicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogarithmicSlider.h; sourceTree = "<group>"; };
 		B377497F1A70339B007B182C /* LogarithmicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogarithmicSlider.m; sourceTree = "<group>"; };
 		B37749801A70339B007B182C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -582,6 +586,8 @@
 		B32481F41A6B546200CD9244 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B337A6D71A8A97A800E72152 /* saw.png */,
+				B337A6D81A8A97A800E72152 /* sine.png */,
 				B32481F51A6B546200CD9244 /* Info.plist */,
 				B32481F61A6B546200CD9244 /* main.m */,
 			);
@@ -1339,9 +1345,11 @@
 				B3B061F21A6B664F008F3412 /* marmstk1.wav in Resources */,
 				B3B061EC1A6B664F008F3412 /* LICENSE.TXT in Resources */,
 				B32482001A6B546200CD9244 /* Main.storyboard in Resources */,
+				B337A6D91A8A97A800E72152 /* saw.png in Resources */,
 				B3B061F31A6B664F008F3412 /* PianoBassDrumLoop.wav in Resources */,
 				B32482051A6B546200CD9244 /* LaunchScreen.xib in Resources */,
 				B32482021A6B546200CD9244 /* Images.xcassets in Resources */,
+				B337A6DA1A8A97A800E72152 /* sine.png in Resources */,
 				B3B0625F1A6B664F008F3412 /* declick.udo in Resources */,
 				B3B061F11A6B664F008F3412 /* mandpluk.aif in Resources */,
 				B3B061F01A6B664F008F3412 /* 808loop.wav in Resources */,

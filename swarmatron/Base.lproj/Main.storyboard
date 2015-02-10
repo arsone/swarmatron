@@ -93,18 +93,6 @@
                                 <color key="textColor" red="0.56470590829849243" green="0.79607850313186646" blue="0.80392163991928101" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-aB-WhJ">
-                                <rect key="frame" x="193" y="534" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saw" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-OF-6Sw">
-                                <rect key="frame" x="94" y="534" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="50" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-kz-mwW">
                                 <rect key="frame" x="48" y="491" width="225" height="31"/>
                                 <connections>
@@ -117,13 +105,19 @@
                                 <color key="textColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-LF-w7j">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-LF-w7j">
                                 <rect key="frame" x="136" y="529" width="51" height="31"/>
                                 <color key="onTintColor" red="0.5647059083" green="0.79607850309999995" blue="0.80392163989999998" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
-                                    <action selector="sawSineToggled:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2qX-2c-Hm6"/>
+                                    <action selector="sawSineToggled:" destination="vXZ-lx-hvc" eventType="valueChanged" id="whf-Mn-RQA"/>
                                 </connections>
                             </switch>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sine.png" translatesAutoresizingMaskIntoConstraints="NO" id="moM-lE-QGA">
+                                <rect key="frame" x="98" y="530" width="30" height="30"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="saw.png" translatesAutoresizingMaskIntoConstraints="NO" id="erp-nt-siV">
+                                <rect key="frame" x="193" y="530" width="30" height="30"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1098039299249649" green="0.11372549831867218" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
                         <gestureRecognizers/>
@@ -137,7 +131,6 @@
                         <outlet property="knobPlaceHolder" destination="QXj-L2-YsW" id="Pcf-PB-z6s"/>
                         <outlet property="oscBank" destination="AoV-Wv-TBZ" id="oxm-hp-rwH"/>
                         <outlet property="valueLabel" destination="mEj-eK-PUO" id="Xqp-vl-N3K"/>
-                        <outlet property="waveformType" destination="DxO-LF-w7j" id="RFQ-Ys-G3R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -146,4 +139,8 @@
             <point key="canvasLocation" x="139" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="saw.png" width="30" height="30"/>
+        <image name="sine.png" width="30" height="30"/>
+    </resources>
 </document>
