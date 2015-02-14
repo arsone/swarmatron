@@ -10,11 +10,8 @@
 
 @interface AKAudioAnalyzer : AKInstrument
 
-@property (nonatomic, strong) AKInstrumentProperty *trackedFrequency;
-#define kTrackedFrequencyMin  0.0
-#define kTrackedFrequencyMax  2500.0
-
-@property (nonatomic, strong) AKInstrumentProperty *trackedAmplitude;
+@property AKInstrumentProperty *trackedFrequency;
+@property AKInstrumentProperty *trackedAmplitude;
 
 - (instancetype)initWithAudioSource:(AKAudio *)audioSource;
 

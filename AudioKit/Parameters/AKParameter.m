@@ -133,10 +133,11 @@ static int currentID = 1;
     self.value = self.initialValue;
 }
 
-- (void)randomize;
+- (void)randomize
 {
     float width = self.maximum - self.minimum;
-    [self setValue:(((float) arc4random() / RAND_MAX) * width) + self.minimum];
+    float random = ((float)arc4random() / 0x100000000);
+    [self setValue:((random * width) + self.minimum)];
 }
 
 
@@ -179,11 +180,23 @@ static int currentID = 1;
     return new;
 }
 
-- (instancetype)amplitudeFromFullScaleDecibel;
-{
+- (instancetype)mathWithOperation:(NSString *)operation{
     AKParameter *new = [[AKParameter alloc] init];
-    [new setParameterString:[NSString stringWithFormat:@"ampdbfs(%@)", _parameterString]];
+    [new setParameterString:[NSString stringWithFormat:@"%@(%@)", operation, _parameterString]];
     return new;
+}
+
+- (instancetype)floor          { return [self mathWithOperation:@"floor"]; }
+- (instancetype)round          { return [self mathWithOperation:@"round"]; }
+- (instancetype)fractionalPart { return [self mathWithOperation:@"frac"];  }
+
+- (instancetype)absoluteValue  { return [self mathWithOperation:@"abs"];   }
+- (instancetype)log            { return [self mathWithOperation:@"log"];   }
+- (instancetype)log10          { return [self mathWithOperation:@"log10"]; }
+- (instancetype)squareRoot     { return [self mathWithOperation:@"sqrt"];  }
+
+- (instancetype)amplitudeFromFullScaleDecibel {
+    return [self mathWithOperation:@"ampdbfs"];
 }
 
 

@@ -11,6 +11,9 @@
 @interface VCOsc : AKInstrument
 
 @property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
+@property AKVCOscillatorWaveformType *waveformType;
+
 
 
 @end
+ 

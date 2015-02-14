@@ -17,11 +17,15 @@
         
         _frequencyValue = [[AKInstrumentProperty alloc] initWithValue:32.5 minimum:32.5 maximum:1000.0];
         
+        _waveformType = [[AKInstrumentProperty alloc] initWithString:AKVCOscillatorWaveformTypeSawtooth];
+        
         [self addProperty:_frequencyValue];
+        [self addProperty:_waveformType];
         
         AKVCOscillator *vcOscillator;
         vcOscillator = [[AKVCOscillator alloc] init];
         vcOscillator.frequency = _frequencyValue;
+        vcOscillator.waveformType = _waveformType;
         [self connect: vcOscillator];
         
         AKAudioOutput *audioOutput = [[AKAudioOutput alloc] initWithAudioSource: vcOscillator];
