@@ -33,7 +33,7 @@
 // -----------------------------------------------------------------------------
 
 // The CSD Text representation of the parameter's name
-@property (nonatomic, strong) NSString *parameterString;
+@property NSString *parameterString;
 
 /// Helper method to avoid alloc and init each time.
 /// @param name The name of the parameter as it should appear in the output file.
@@ -134,6 +134,27 @@
 
 /// Helper function to return one-over-this-parameter
 - (instancetype)inverse;
+
+/// Helper function to create an integer
+- (instancetype)floor;
+
+/// Helper function to create an integer
+- (instancetype)round;
+
+/// Helper function to return fractional part
+- (instancetype)fractionalPart;
+
+/// Helper function to return absolute value
+- (instancetype)absoluteValue;
+
+/// Helper function to return natural log
+- (instancetype)log;
+
+/// Helper function to return log base 10
+- (instancetype)log10;
+
+/// Helper function to return square root
+- (instancetype)squareRoot;
 
 /// Helper fucntion to convert logarithmic full scale decibel values to properly scaled amplitude
 - (instancetype)amplitudeFromFullScaleDecibel;
