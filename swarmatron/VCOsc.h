@@ -17,6 +17,6 @@
 @property (nonatomic, strong) AKParameter *pulseWidth;
 @property AKVCOscillatorWaveformType waveformType;
 
+-(void)setOptionalWaveformType;
 
 @end
- 

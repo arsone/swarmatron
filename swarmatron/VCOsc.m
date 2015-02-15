@@ -11,7 +11,7 @@
 
 @implementation VCOsc
 
-- (instancetype)init {
+- (instancetype)initWithWaveformType:(AKVCOscillatorWaveformType)waveformType bandwidth:(AKConstant *)bandwidth pulseWidth:(AKParameter *)pulseWidth frequency:(AKParameter *)frequency amplitude:(AKParameter *)amplitude {
     self = [super init];
     if (self) {
         
@@ -25,7 +25,7 @@
         [self addProperty:_amplitude];
         [self addProperty:_bandwidth];
         [self addProperty:_pulseWidth];
-        
+ 
         AKVCOscillator *vcOscillator;
         vcOscillator = [[AKVCOscillator alloc] init];
         vcOscillator.amplitude = _amplitude;
@@ -40,6 +40,11 @@
     }
     
     return self;
+}
+
+-(void)setOptionalWaveformType:(AKVCOscillatorWaveformType)waveformType {
+    
+    NSLog(@"waveform type: %u", _waveformType);
 }
 
 @end

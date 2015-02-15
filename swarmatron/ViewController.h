@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "VCOsc.h"
+
 
 @interface ViewController : UIViewController
 
@@ -15,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @property (weak, nonatomic) IBOutlet UISwitch *oscBank;
+
+@property (weak, nonatomic) IBOutlet UISwitch *sawSineToggled;
 
 - (IBAction)sawSineToggled:(id)sender;
 
