@@ -130,6 +130,7 @@
                     <connections>
                         <outlet property="knobPlaceHolder" destination="QXj-L2-YsW" id="Pcf-PB-z6s"/>
                         <outlet property="oscBank" destination="AoV-Wv-TBZ" id="oxm-hp-rwH"/>
+                        <outlet property="sawSineToggled" destination="DxO-LF-w7j" id="L4D-lx-hUY"/>
                         <outlet property="valueLabel" destination="mEj-eK-PUO" id="Xqp-vl-N3K"/>
                     </connections>
                 </viewController>

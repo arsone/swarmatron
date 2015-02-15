@@ -7,13 +7,17 @@
 //
 
 #import "AKFoundation.h"
+#import "AKManager.h"
 
 @interface VCOsc : AKInstrument
 
-@property (nonatomic, strong) AKInstrumentProperty *frequencyValue;
-@property AKVCOscillatorWaveformType *waveformType;
+@property (nonatomic, strong) AKParameter *amplitude;
+@property (nonatomic, strong) AKConstant *bandwidth;
+@property (nonatomic, strong) AKParameter *frequency;
+@property (nonatomic, strong) AKParameter *pulseWidth;
+@property AKVCOscillatorWaveformType waveformType;
 
-
+-(void)setOptionalWaveformType;
 
 @end
  

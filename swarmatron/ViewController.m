@@ -10,9 +10,9 @@
 #import "AKFoundation.h"
 #import "RWKnobControl.h"
 #import "SomeInstrument.h"
-#import "VCOsc.h"
 #import "AKTools.h"
 #import "LogarithmicSlider.h"
+#import "VCOsc.h"
 //#import "ADSREnvelope.h"
 
 
@@ -23,6 +23,8 @@
 }
 
 @property (strong, nonatomic) NSMutableArray *oscillators;
+
+@property (nonatomic, readwrite) AKVCOscillatorWaveformType waveformType;
 
 @end
 
@@ -164,7 +166,18 @@
 //}
 
 
-- (IBAction)sawSineToggled:(id)sender {
-    //handle the toggle here
+- (IBAction)sawSineToggled:(UISwitch *)sender {
+    UISwitch *waveformSwitch = (UISwitch *)sender;
+    
+    if (waveformSwitch.on) {
+        vcOsc.waveformType = AKVCOscillatorWaveformTypeSawtooth;
+        [vcOsc setOptionalWaveformType];
+        NSLog(@"switch is on!");
+    } else {
+        vcOsc.waveformType = AKVCOscillatorWaveformTypePulseUnnormalized;
+        [vcOsc setOptionalWaveformType];
+        NSLog(@"switch is off!");
+    }
 }
-@end
+
+@end    
