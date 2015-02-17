@@ -94,20 +94,20 @@
         
         for (int i = 1; i <8; i++) {
             
-            AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
+            AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequency;
             
-            ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value
+            ((VCOsc*)_oscillators[i]).frequency.value = prevValue.value + (i * prevValue.value
                                                                                          *(_knobControl.value / _knobControl.maximumValue)) / 100;
-            NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequencyValue.value);
+            NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequency.value);
         }
     }
 }
 
 - (void)updateFrequency:(float) step {
     for (int i = 1; i < 8; i++) {
-        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
+        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequency;
         
-        ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100 + step;
+        ((VCOsc*)_oscillators[i]).frequency.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100 + step;
     }
 }
 
@@ -133,13 +133,13 @@
 
 - (IBAction)changeFrequency:(id)sender {
 
-    [AKTools setProperty:((VCOsc*)_oscillators[0]).frequencyValue withSlider:(UISlider *)sender];
+    [AKTools setProperty:((VCOsc*)_oscillators[0]).frequency withSlider:(UISlider *)sender];
     
     for(int i = 1; i < 8; i++) {
-        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequencyValue;
+        AKInstrumentProperty *prevValue = ((VCOsc*)_oscillators[i-1]).frequency;
         
-        ((VCOsc*)_oscillators[i]).frequencyValue.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100;
-        NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequencyValue.value);
+        ((VCOsc*)_oscillators[i]).frequency.value = prevValue.value + (i * prevValue.value *(_knobControl.value / _knobControl.maximumValue)) / 100;
+        NSLog(@"value: %f",  ((VCOsc*)_oscillators[i]).frequency.value);
     }
 }
 

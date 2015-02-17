@@ -20,10 +20,10 @@
         _frequency = [[AKParameter alloc] initWithValue:32.5 minimum:32.5 maximum:1000.0];
         _pulseWidth = [[AKParameter alloc] initWithValue:0 minimum:0 maximum:1];
         _waveformType = AKVCOscillatorWaveformTypeSawtooth;
-        
-        [self addProperty:_frequency];
+    
         [self addProperty:_amplitude];
         [self addProperty:_bandwidth];
+        [self addProperty:_frequency];
         [self addProperty:_pulseWidth];
  
         AKVCOscillator *vcOscillator;
@@ -45,7 +45,7 @@
 
 -(void)setOptionalWaveformType:(AKVCOscillatorWaveformType)waveformType {
     
-    NSLog(@"waveform type: %u", _waveformType);
+    NSLog(@"waveform type: %lu", _waveformType);
 }
 
 @end
